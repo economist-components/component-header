@@ -19,8 +19,26 @@
   "example": "lib/example.js",
   "examplestyle": "lib/example.css",
   "assets": [
+    "assets/header-bagehot-mobile.svg",
+    "assets/header-bagehot.svg",
+    "assets/header-buttonwood-mobile.svg",
+    "assets/header-buttonwood.svg",
     "assets/header-democracyinamerica-mobile.svg",
-    "assets/header-democracyinamerica.svg"
+    "assets/header-democracyinamerica.svg",
+    "assets/header-economist-explains-mobile.svg",
+    "assets/header-economist-explains.svg",
+    "assets/header-erasmus-mobile.svg",
+    "assets/header-erasmus.svg",
+    "assets/header-freeexchange-mobile.svg",
+    "assets/header-freeexchange.svg",
+    "assets/header-gametheory-mobile.svg",
+    "assets/header-gametheory.svg",
+    "assets/header-graphicdetail-mobile.svg",
+    "assets/header-graphicdetail.svg",
+    "assets/header-gulliver-mobile.svg",
+    "assets/header-gulliver.svg",
+    "assets/header-prospero-mobile.svg",
+    "assets/header-prospero.svg"
   ],
   "directories": {
     "lib": "lib",
