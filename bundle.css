@@ -223,6 +223,7 @@ body {
 /**
  * Css grid variables
  */
+/* stylelint-disable number-max-precision */
 .header {
   position: relative;
   font-family: 'EconSans', Tahoma, sans-serif;
