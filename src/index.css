@@ -1,6 +1,3 @@
-@import '@economist/component-typography';
-@import '@economist/component-palette';
-@import '@economist/component-grid';
 @custom-media --header-viewport-big (width >= 36rem);
 @custom-media --header-viewport-small (width < 36rem);
 

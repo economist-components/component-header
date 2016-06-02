@@ -27,6 +27,7 @@ module.exports = function configureKarma(config) {
     SauceSafariLatest: {
       base: 'SauceLabs',
       browserName: 'Safari',
+      platform: 'Mac 10.9',
     },
     SauceInternetExplorerLatest: {
       base: 'SauceLabs',
@@ -72,6 +73,7 @@ module.exports = function configureKarma(config) {
       ],
       configure: (bundle) => {
         bundle.on('prebundle', () => {
+          bundle.external('react/addons');
           bundle.external('react/lib/ReactContext');
           bundle.external('react/lib/ExecutionEnvironment');
         });
