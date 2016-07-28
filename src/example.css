@@ -1,8 +1,12 @@
+@import '@economist/component-typography';
+@import '@economist/component-palette';
+@import '@economist/component-grid';
 @import './settings.css';
 @import './blogCustomisation.css';
 @import './index.css';
 
 /* stylelint-disable selector-no-type */
+/* just the example */
 
 a {
   text-decoration: none;
