@@ -110,9 +110,12 @@
       "stylelint-config-strict"
     ]
   },
+  "peerDependencies": {
+    "react": "^0.14.8||^15.0.0||^16.0.0"
+  },
   "dependencies": {
     "classnames": "^2.2.5",
-    "react": "^0.14.8||^15.0.0"
+    "prop-types": "^15.5.0"
   },
   "devDependencies": {
     "@economist/component-grid": "^1.1.0",
@@ -131,10 +134,11 @@
     "browserify": "^13.0.0",
     "browserify-istanbul": "^2.0.0",
     "chai": "^3.5.0",
-    "chai-enzyme": "^0.4.2",
+    "chai-enzyme": "^1.0.0-beta.0",
     "chai-spies": "^0.7.1",
     "coveralls": "^2.11.9",
-    "enzyme": "^2.2.0",
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.1",
     "eslint": "^2.9.0",
     "eslint-config-strict": "^8.5.1",
     "eslint-config-strict-react": "^8.0.1",
@@ -165,8 +169,8 @@
     "postcss-svg": "^1.0.5",
     "postcss-url": "^5.1.2",
     "postcss": "^5.1.1",
-    "react-addons-test-utils": "^0.14.8||^15.0.0",
-    "react-dom": "^0.14.8||^15.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "semantic-release": "^4.3.5",
     "stylelint": "^6.3.3",
     "stylelint-config-strict": "^5.0.0",

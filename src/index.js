@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 export default function Header({
   flyTitle,
@@ -71,21 +72,21 @@ export default function Header({
   );
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV !== 'production') {
   Header.propTypes = {
-    flyTitle: React.PropTypes.string,
-    smallMode: React.PropTypes.bool,
-    title: React.PropTypes.string.isRequired,
-    text: React.PropTypes.string,
-    itemType: React.PropTypes.string,
-    itemProp: React.PropTypes.string,
-    className: React.PropTypes.string,
-    children: React.PropTypes.node,
-    link: React.PropTypes.shape({
-      className: React.PropTypes.string,
-      href: React.PropTypes.string,
-      name: React.PropTypes.string,
-      title: React.PropTypes.string,
+    flyTitle: PropTypes.string,
+    smallMode: PropTypes.bool,
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string,
+    itemType: PropTypes.string,
+    itemProp: PropTypes.string,
+    className: PropTypes.string,
+    children: PropTypes.node,
+    link: PropTypes.shape({
+      className: PropTypes.string,
+      href: PropTypes.string,
+      name: PropTypes.string,
+      title: PropTypes.string,
     }),
   };
 }
