@@ -25,7 +25,9 @@ export default function Header({
       >{flyTitle}</h2>
     ));
   }
-  headerContent.push(<h1 className="header__title" itemProp="headline" key="title">{title}</h1>);
+  if (title) {
+    headerContent.push(<h1 className="header__title" itemProp="headline" key="title">{title}</h1>);
+  }
   if (text && !smallMode) {
     /* eslint-disable react/no-danger */
     headerContent.push((
@@ -76,7 +78,7 @@ if (process.env.NODE_ENV !== 'production') {
   Header.propTypes = {
     flyTitle: PropTypes.string,
     smallMode: PropTypes.bool,
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     text: PropTypes.string,
     itemType: PropTypes.string,
     itemProp: PropTypes.string,
