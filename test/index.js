@@ -42,12 +42,17 @@ describe('Header', () => {
     });
 
     it('renders title h1[itemProp=headline] tag', () => {
-      rendered.find('.header__title').should.have.tagName('h1');
-      rendered.find('.header__title').should.have.attr('itemprop', 'headline');
+      const headerWrapper = mount(<Header title="foo" />);
+      headerWrapper.find('.header__title').should.have.tagName('h1');
+      headerWrapper.find('.header__title').should.have.attr('itemprop', 'headline');
     });
 
     it('renders the title text inside .header__title', () => {
       mount(<Header title="foo" />).find('.header__title').should.have.text('foo');
+    });
+
+    it('renders without title', () => {
+      mount(<Header />).find('.header__title').should.not.be.present();
     });
 
     it('renders title wrapped in a link, if given link prop', () => {
